@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     ];
     const projectList = document.getElementById('project-list');
-    projects.forEach(project=>{
+    projects.forEach(project => {
         const listItem = document.createElement('li');
-        listItem.innerHTML=`
+        listItem.innerHTML = `
         <h3>${project.title}</h3>
         <p>${project.description}</p>
         <p><strong>Technologies:</strong> ${project.technogies.join(', ')}</p>
@@ -53,13 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
         projectList.appendChild(listItem);
     });
     const experienceList = document.getElementById('experience-list');
-    experiences.forEach(experience =>{
+    experiences.forEach(experience => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `
         <h3>${experience.title}</h3>
         <p>${experience.duration}</p>
         <ul>
-            ${experience.details.map(detail=>`<li>${detail}</li>`).join('')}
+            ${experience.details.map(detail => `<li>${detail}</li>`).join('')}
         </ul>
         `;
         experienceList.appendChild(listItem);
